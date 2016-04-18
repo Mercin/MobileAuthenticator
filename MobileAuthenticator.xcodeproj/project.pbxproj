@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A8FE1DA13D6492FA44B7F77 /* libPods-MobileAuthenticatorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB2DE209B4789302CE0CBC9 /* libPods-MobileAuthenticatorTests.a */; };
 		421BBDBC1CC3846000CA69D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 421BBDBB1CC3846000CA69D2 /* main.m */; };
 		421BBDBF1CC3846000CA69D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 421BBDBE1CC3846000CA69D2 /* AppDelegate.m */; };
-		421BBDC21CC3846000CA69D2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 421BBDC11CC3846000CA69D2 /* ViewController.m */; };
+		421BBDC21CC3846000CA69D2 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 421BBDC11CC3846000CA69D2 /* LoginViewController.m */; };
 		421BBDC51CC3846000CA69D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 421BBDC31CC3846000CA69D2 /* Main.storyboard */; };
 		421BBDC71CC3846000CA69D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421BBDC61CC3846000CA69D2 /* Assets.xcassets */; };
 		421BBDCA1CC3846000CA69D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 421BBDC81CC3846000CA69D2 /* LaunchScreen.storyboard */; };
 		421BBDD51CC3846000CA69D2 /* MobileAuthenticatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 421BBDD41CC3846000CA69D2 /* MobileAuthenticatorTests.m */; };
 		421BBDE01CC3846000CA69D2 /* MobileAuthenticatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 421BBDDF1CC3846000CA69D2 /* MobileAuthenticatorUITests.m */; };
+		424449521CC392EE00591066 /* IdentifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 424449511CC392EE00591066 /* IdentifyViewController.m */; };
+		42BF049D1CC506A200A26F48 /* PinGenerationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF049C1CC506A200A26F48 /* PinGenerationController.m */; };
+		5B7974A0B21ECED5615D7BA1 /* libPods-MobileAuthenticatorUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4959492F51729C04228A9628 /* libPods-MobileAuthenticatorUITests.a */; };
+		F9014462492546DB2CE11850 /* libPods-MobileAuthenticator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FF7595DDB9C8FF761E29F5 /* libPods-MobileAuthenticator.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07EB5C3B6E5C4EA2236E0173 /* Pods-MobileAuthenticatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAuthenticatorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileAuthenticatorUITests/Pods-MobileAuthenticatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		421BBDB71CC3846000CA69D2 /* MobileAuthenticator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileAuthenticator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		421BBDBB1CC3846000CA69D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		421BBDBD1CC3846000CA69D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		421BBDBE1CC3846000CA69D2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		421BBDC01CC3846000CA69D2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		421BBDC11CC3846000CA69D2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		421BBDC01CC3846000CA69D2 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		421BBDC11CC3846000CA69D2 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		421BBDC41CC3846000CA69D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		421BBDC61CC3846000CA69D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		421BBDC91CC3846000CA69D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +57,19 @@
 		421BBDDB1CC3846000CA69D2 /* MobileAuthenticatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileAuthenticatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		421BBDDF1CC3846000CA69D2 /* MobileAuthenticatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobileAuthenticatorUITests.m; sourceTree = "<group>"; };
 		421BBDE11CC3846000CA69D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		424449501CC392EE00591066 /* IdentifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdentifyViewController.h; sourceTree = "<group>"; };
+		424449511CC392EE00591066 /* IdentifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdentifyViewController.m; sourceTree = "<group>"; };
+		42BF049B1CC506A200A26F48 /* PinGenerationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinGenerationController.h; sourceTree = "<group>"; };
+		42BF049C1CC506A200A26F48 /* PinGenerationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinGenerationController.m; sourceTree = "<group>"; };
+		42BF04A11CC5101800A26F48 /* Globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
+		4959492F51729C04228A9628 /* libPods-MobileAuthenticatorUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileAuthenticatorUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7017CBF9F86191ADB10E4AED /* Pods-MobileAuthenticatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAuthenticatorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileAuthenticatorUITests/Pods-MobileAuthenticatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ABB252B8940C475C78BF2CCC /* Pods-MobileAuthenticator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAuthenticator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileAuthenticator/Pods-MobileAuthenticator.debug.xcconfig"; sourceTree = "<group>"; };
+		B43852F4F0AA472B9AF58518 /* Pods-MobileAuthenticator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAuthenticator.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileAuthenticator/Pods-MobileAuthenticator.release.xcconfig"; sourceTree = "<group>"; };
+		B9D906A86CCFA37348666A92 /* Pods-MobileAuthenticatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAuthenticatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileAuthenticatorTests/Pods-MobileAuthenticatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		BFB2DE209B4789302CE0CBC9 /* libPods-MobileAuthenticatorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileAuthenticatorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0DE1D270D2D287CF1B17F3C /* Pods-MobileAuthenticatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAuthenticatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileAuthenticatorTests/Pods-MobileAuthenticatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F0FF7595DDB9C8FF761E29F5 /* libPods-MobileAuthenticator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileAuthenticator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9014462492546DB2CE11850 /* libPods-MobileAuthenticator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A8FE1DA13D6492FA44B7F77 /* libPods-MobileAuthenticatorTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B7974A0B21ECED5615D7BA1 /* libPods-MobileAuthenticatorUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +107,8 @@
 				421BBDD31CC3846000CA69D2 /* MobileAuthenticatorTests */,
 				421BBDDE1CC3846000CA69D2 /* MobileAuthenticatorUITests */,
 				421BBDB81CC3846000CA69D2 /* Products */,
+				CB78361BFD9A9C1A75F56425 /* Pods */,
+				5243AA6DEF430B402BD0D953 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +125,20 @@
 		421BBDB91CC3846000CA69D2 /* MobileAuthenticator */ = {
 			isa = PBXGroup;
 			children = (
+				42BF049B1CC506A200A26F48 /* PinGenerationController.h */,
+				42BF049C1CC506A200A26F48 /* PinGenerationController.m */,
+				424449501CC392EE00591066 /* IdentifyViewController.h */,
+				424449511CC392EE00591066 /* IdentifyViewController.m */,
 				421BBDBD1CC3846000CA69D2 /* AppDelegate.h */,
 				421BBDBE1CC3846000CA69D2 /* AppDelegate.m */,
-				421BBDC01CC3846000CA69D2 /* ViewController.h */,
-				421BBDC11CC3846000CA69D2 /* ViewController.m */,
+				421BBDC01CC3846000CA69D2 /* LoginViewController.h */,
+				421BBDC11CC3846000CA69D2 /* LoginViewController.m */,
 				421BBDC31CC3846000CA69D2 /* Main.storyboard */,
 				421BBDC61CC3846000CA69D2 /* Assets.xcassets */,
 				421BBDC81CC3846000CA69D2 /* LaunchScreen.storyboard */,
 				421BBDCB1CC3846000CA69D2 /* Info.plist */,
 				421BBDBA1CC3846000CA69D2 /* Supporting Files */,
+				42BF04A11CC5101800A26F48 /* Globals.h */,
 			);
 			path = MobileAuthenticator;
 			sourceTree = "<group>";
@@ -140,6 +169,29 @@
 			path = MobileAuthenticatorUITests;
 			sourceTree = "<group>";
 		};
+		5243AA6DEF430B402BD0D953 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0FF7595DDB9C8FF761E29F5 /* libPods-MobileAuthenticator.a */,
+				BFB2DE209B4789302CE0CBC9 /* libPods-MobileAuthenticatorTests.a */,
+				4959492F51729C04228A9628 /* libPods-MobileAuthenticatorUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB78361BFD9A9C1A75F56425 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ABB252B8940C475C78BF2CCC /* Pods-MobileAuthenticator.debug.xcconfig */,
+				B43852F4F0AA472B9AF58518 /* Pods-MobileAuthenticator.release.xcconfig */,
+				D0DE1D270D2D287CF1B17F3C /* Pods-MobileAuthenticatorTests.debug.xcconfig */,
+				B9D906A86CCFA37348666A92 /* Pods-MobileAuthenticatorTests.release.xcconfig */,
+				07EB5C3B6E5C4EA2236E0173 /* Pods-MobileAuthenticatorUITests.debug.xcconfig */,
+				7017CBF9F86191ADB10E4AED /* Pods-MobileAuthenticatorUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 421BBDE41CC3846000CA69D2 /* Build configuration list for PBXNativeTarget "MobileAuthenticator" */;
 			buildPhases = (
+				67EE86CC1430D5C35E5603A2 /* 📦 Check Pods Manifest.lock */,
 				421BBDB31CC3846000CA69D2 /* Sources */,
 				421BBDB41CC3846000CA69D2 /* Frameworks */,
 				421BBDB51CC3846000CA69D2 /* Resources */,
+				2B1B79990BFD468DB3DA09A4 /* 📦 Embed Pods Frameworks */,
+				C5F6B13226B8533B50B4EF32 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 421BBDE71CC3846000CA69D2 /* Build configuration list for PBXNativeTarget "MobileAuthenticatorTests" */;
 			buildPhases = (
+				EBB8074301787A6D832DA1C0 /* 📦 Check Pods Manifest.lock */,
 				421BBDCC1CC3846000CA69D2 /* Sources */,
 				421BBDCD1CC3846000CA69D2 /* Frameworks */,
 				421BBDCE1CC3846000CA69D2 /* Resources */,
+				5ED5287E98EDC7D26332247C /* 📦 Embed Pods Frameworks */,
+				38DA48D67CCB8DA4EAD71605 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +240,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 421BBDEA1CC3846000CA69D2 /* Build configuration list for PBXNativeTarget "MobileAuthenticatorUITests" */;
 			buildPhases = (
+				780C6FEF0CDC85364C962A68 /* 📦 Check Pods Manifest.lock */,
 				421BBDD71CC3846000CA69D2 /* Sources */,
 				421BBDD81CC3846000CA69D2 /* Frameworks */,
 				421BBDD91CC3846000CA69D2 /* Resources */,
+				B9183E4DD42999FFB163FEC2 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,13 +325,138 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B1B79990BFD468DB3DA09A4 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileAuthenticator/Pods-MobileAuthenticator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38DA48D67CCB8DA4EAD71605 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileAuthenticatorTests/Pods-MobileAuthenticatorTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5ED5287E98EDC7D26332247C /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileAuthenticatorTests/Pods-MobileAuthenticatorTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67EE86CC1430D5C35E5603A2 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		780C6FEF0CDC85364C962A68 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B9183E4DD42999FFB163FEC2 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileAuthenticatorUITests/Pods-MobileAuthenticatorUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5F6B13226B8533B50B4EF32 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileAuthenticator/Pods-MobileAuthenticator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBB8074301787A6D832DA1C0 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		421BBDB31CC3846000CA69D2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				421BBDC21CC3846000CA69D2 /* ViewController.m in Sources */,
+				421BBDC21CC3846000CA69D2 /* LoginViewController.m in Sources */,
 				421BBDBF1CC3846000CA69D2 /* AppDelegate.m in Sources */,
+				42BF049D1CC506A200A26F48 /* PinGenerationController.m in Sources */,
+				424449521CC392EE00591066 /* IdentifyViewController.m in Sources */,
 				421BBDBC1CC3846000CA69D2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,6 +598,7 @@
 		};
 		421BBDE51CC3846000CA69D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABB252B8940C475C78BF2CCC /* Pods-MobileAuthenticator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MobileAuthenticator/Info.plist;
@@ -424,6 +610,7 @@
 		};
 		421BBDE61CC3846000CA69D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B43852F4F0AA472B9AF58518 /* Pods-MobileAuthenticator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MobileAuthenticator/Info.plist;
@@ -435,6 +622,7 @@
 		};
 		421BBDE81CC3846000CA69D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0DE1D270D2D287CF1B17F3C /* Pods-MobileAuthenticatorTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MobileAuthenticatorTests/Info.plist;
@@ -447,6 +635,7 @@
 		};
 		421BBDE91CC3846000CA69D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9D906A86CCFA37348666A92 /* Pods-MobileAuthenticatorTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = MobileAuthenticatorTests/Info.plist;
@@ -459,6 +648,7 @@
 		};
 		421BBDEB1CC3846000CA69D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07EB5C3B6E5C4EA2236E0173 /* Pods-MobileAuthenticatorUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = MobileAuthenticatorUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -470,6 +660,7 @@
 		};
 		421BBDEC1CC3846000CA69D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7017CBF9F86191ADB10E4AED /* Pods-MobileAuthenticatorUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = MobileAuthenticatorUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -498,6 +689,7 @@
 				421BBDE61CC3846000CA69D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		421BBDE71CC3846000CA69D2 /* Build configuration list for PBXNativeTarget "MobileAuthenticatorTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +698,7 @@
 				421BBDE91CC3846000CA69D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		421BBDEA1CC3846000CA69D2 /* Build configuration list for PBXNativeTarget "MobileAuthenticatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +707,7 @@
 				421BBDEC1CC3846000CA69D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
