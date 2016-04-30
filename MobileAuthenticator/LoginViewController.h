@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Valet/Valet.h>
 
 @interface LoginViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UIButton *identifyButton;
+@property (nonatomic, strong) VALValet *myValet;
 
 @end
 

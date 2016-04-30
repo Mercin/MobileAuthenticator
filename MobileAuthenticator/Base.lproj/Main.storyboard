@@ -91,9 +91,7 @@
                                 <rect key="frame" x="215" y="262" width="128" height="65"/>
                                 <color key="backgroundColor" red="0.81544384969999995" green="1" blue="0.66989913400000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="7YD-0h-QFX"/>
-                                    <constraint firstAttribute="width" constant="128" id="8lu-fA-tHB"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="epe-qU-aOX"/>
+                                    <constraint firstAttribute="width" constant="128" id="l31-vC-jbj"/>
                                 </constraints>
                                 <state key="normal" title="SUBMIT"/>
                                 <connections>
@@ -104,10 +102,8 @@
                                 <rect key="frame" x="169" y="187" width="220" height="30"/>
                                 <color key="backgroundColor" red="0.92966382786508039" green="1" blue="0.87168665481398611" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="0L2-7x-zob"/>
-                                    <constraint firstAttribute="height" constant="30" id="IdQ-wY-L7q"/>
-                                    <constraint firstAttribute="width" constant="220" id="Rwu-Uz-cXV"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="qhu-Ek-lnf"/>
+                                    <constraint firstAttribute="height" constant="30" id="ElV-TW-OAY"/>
+                                    <constraint firstAttribute="width" constant="220" id="UyX-gz-Ssx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -115,11 +111,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="y7z-48-ln9" firstAttribute="leading" secondItem="CNc-Hl-pz7" secondAttribute="leading" constant="169" id="LNE-Yx-H9Q"/>
-                            <constraint firstItem="7o0-y5-V5v" firstAttribute="top" secondItem="y7z-48-ln9" secondAttribute="bottom" constant="45" id="WyY-VM-lO4"/>
-                            <constraint firstItem="5YF-b6-6hX" firstAttribute="top" secondItem="7o0-y5-V5v" secondAttribute="bottom" constant="273" id="XXp-ns-le5"/>
-                            <constraint firstItem="y7z-48-ln9" firstAttribute="top" secondItem="9DD-H9-9EM" secondAttribute="bottom" constant="167" id="Ysa-Eh-vXV"/>
-                            <constraint firstItem="y7z-48-ln9" firstAttribute="centerX" secondItem="7o0-y5-V5v" secondAttribute="centerX" id="eXz-St-uxl"/>
+                            <constraint firstItem="y7z-48-ln9" firstAttribute="top" secondItem="9DD-H9-9EM" secondAttribute="bottom" constant="167" id="AGh-kQ-1Lf"/>
+                            <constraint firstItem="y7z-48-ln9" firstAttribute="centerX" secondItem="7o0-y5-V5v" secondAttribute="centerX" id="Jpy-3Z-c19"/>
+                            <constraint firstItem="7o0-y5-V5v" firstAttribute="top" secondItem="y7z-48-ln9" secondAttribute="bottom" constant="45" id="NgE-Tl-5cL"/>
+                            <constraint firstItem="y7z-48-ln9" firstAttribute="leading" secondItem="CNc-Hl-pz7" secondAttribute="leading" constant="169" id="dix-Q0-oFu"/>
+                            <constraint firstItem="5YF-b6-6hX" firstAttribute="top" secondItem="7o0-y5-V5v" secondAttribute="bottom" constant="273" id="fJo-CO-hrv"/>
                         </constraints>
                     </view>
                     <connections>

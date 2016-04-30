@@ -42,7 +42,7 @@
 
 - (IBAction)submitButtonClicked:(id)sender {
     
-    //valid identifier: 576587
+    //valid identifier: banana, martina, makarena
     
     if([self validateInputKey]){
         NSString *identifier = self.identifierTextbox.text;
@@ -52,15 +52,20 @@
 
         AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
         [manager GET:baseUrlstring parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
-            NSLog(@"JSON: %@", responseObject);
+            //NSLog(@"JSON: %@, %@", [responseObject objectForKey:@"file"], [responseObject objectForKey:@"filename"]);
             
+            
+            if([[responseObject objectForKey:@"file"] isEqualToString:@""]){
+                [self presentAlert:AuthFailed];
+            }
+            else{
             //Pozvati novi view za pin generation
             
             PinGenerationController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"PinGenView"];
             [self.navigationController pushViewController:vc animated:YES];
             
             
-            
+            }
         } failure:^(NSURLSessionTask *operation, NSError *error) {
            // NSLog(@"Error: %@", error);
             [self presentAlert:AuthFailed];
@@ -96,6 +101,23 @@
             UIAlertController *alertController = [UIAlertController
                                                   alertControllerWithTitle:@"Error"
                                                   message:@"Authorization failed."
+                                                  preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *okAction = [UIAlertAction
+                                       actionWithTitle:NSLocalizedString(@"OK", @"OK action")
+                                       style:UIAlertActionStyleDefault
+                                       handler:^(UIAlertAction *action)
+                                       {
+                                           NSLog(@"OK action");
+                                       }];
+            [alertController addAction:okAction];
+            [self presentViewController:alertController animated:YES completion:nil];
+            break;
+        }
+        case TooShort:
+        {
+            UIAlertController *alertController = [UIAlertController
+                                                  alertControllerWithTitle:@"Error"
+                                                  message:@"PIN too short."
                                                   preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction *okAction = [UIAlertAction
                                        actionWithTitle:NSLocalizedString(@"OK", @"OK action")

@@ -9,3 +9,6 @@
 static NSInteger const EmptyInput = 0;
 static NSInteger const AuthFailed = 1;
 static NSInteger const PINMissmatch = 2;
+static NSInteger const TooShort = 3;
+static bool useTouchID = NO;
+static bool identificationDone = NO;
