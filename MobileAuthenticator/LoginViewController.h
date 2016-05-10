@@ -12,6 +12,9 @@
 @interface LoginViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIButton *identifyButton;
 @property (nonatomic, strong) VALValet *myValet;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *enableTouchIDButton;
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+
 
 @end
 

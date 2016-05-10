@@ -17,6 +17,7 @@
 		421BBDD51CC3846000CA69D2 /* MobileAuthenticatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 421BBDD41CC3846000CA69D2 /* MobileAuthenticatorTests.m */; };
 		421BBDE01CC3846000CA69D2 /* MobileAuthenticatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 421BBDDF1CC3846000CA69D2 /* MobileAuthenticatorUITests.m */; };
 		424449521CC392EE00591066 /* IdentifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 424449511CC392EE00591066 /* IdentifyViewController.m */; };
+		42A85AB31CE1C616002473BC /* EnterPINViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A85AB21CE1C616002473BC /* EnterPINViewController.m */; };
 		42BF049D1CC506A200A26F48 /* PinGenerationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF049C1CC506A200A26F48 /* PinGenerationController.m */; };
 		5B7974A0B21ECED5615D7BA1 /* libPods-MobileAuthenticatorUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4959492F51729C04228A9628 /* libPods-MobileAuthenticatorUITests.a */; };
 		F9014462492546DB2CE11850 /* libPods-MobileAuthenticator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FF7595DDB9C8FF761E29F5 /* libPods-MobileAuthenticator.a */; };
@@ -59,6 +60,8 @@
 		421BBDE11CC3846000CA69D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		424449501CC392EE00591066 /* IdentifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdentifyViewController.h; sourceTree = "<group>"; };
 		424449511CC392EE00591066 /* IdentifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdentifyViewController.m; sourceTree = "<group>"; };
+		42A85AB11CE1C616002473BC /* EnterPINViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterPINViewController.h; sourceTree = "<group>"; };
+		42A85AB21CE1C616002473BC /* EnterPINViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterPINViewController.m; sourceTree = "<group>"; };
 		42BF049B1CC506A200A26F48 /* PinGenerationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinGenerationController.h; sourceTree = "<group>"; };
 		42BF049C1CC506A200A26F48 /* PinGenerationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinGenerationController.m; sourceTree = "<group>"; };
 		42BF04A11CC5101800A26F48 /* Globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
@@ -125,6 +128,8 @@
 		421BBDB91CC3846000CA69D2 /* MobileAuthenticator */ = {
 			isa = PBXGroup;
 			children = (
+				42A85AB11CE1C616002473BC /* EnterPINViewController.h */,
+				42A85AB21CE1C616002473BC /* EnterPINViewController.m */,
 				42BF049B1CC506A200A26F48 /* PinGenerationController.h */,
 				42BF049C1CC506A200A26F48 /* PinGenerationController.m */,
 				424449501CC392EE00591066 /* IdentifyViewController.h */,
@@ -456,6 +461,7 @@
 				421BBDC21CC3846000CA69D2 /* LoginViewController.m in Sources */,
 				421BBDBF1CC3846000CA69D2 /* AppDelegate.m in Sources */,
 				42BF049D1CC506A200A26F48 /* PinGenerationController.m in Sources */,
+				42A85AB31CE1C616002473BC /* EnterPINViewController.m in Sources */,
 				424449521CC392EE00591066 /* IdentifyViewController.m in Sources */,
 				421BBDBC1CC3846000CA69D2 /* main.m in Sources */,
 			);

@@ -40,6 +40,9 @@
                                     <constraint firstAttribute="height" constant="65" id="YCt-55-0L5"/>
                                 </constraints>
                                 <state key="normal" title="LOGIN"/>
+                                <connections>
+                                    <action selector="loginButtonClicked:" destination="Hcl-w3-Pbd" eventType="touchUpInside" id="Wdp-n5-gJy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMF-OT-vcY">
                                 <rect key="frame" x="194" y="194" width="213" height="65"/>
@@ -66,9 +69,17 @@
                             <constraint firstItem="HZL-rK-8Co" firstAttribute="height" secondItem="iMF-OT-vcY" secondAttribute="height" id="pi6-CJ-Rcm"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="PEw-Xn-jmh"/>
+                    <navigationItem key="navigationItem" id="PEw-Xn-jmh">
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="TouchID" id="OME-c5-fqG">
+                            <connections>
+                                <action selector="clickEnableTouchIDButton:" destination="Hcl-w3-Pbd" id="daI-xt-E7h"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="enableTouchIDButton" destination="OME-c5-fqG" id="tR8-lN-Wlr"/>
                         <outlet property="identifyButton" destination="iMF-OT-vcY" id="F3Q-hK-EkS"/>
+                        <outlet property="loginButton" destination="HZL-rK-8Co" id="CGS-FM-epc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bKf-K7-hhN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -127,6 +138,61 @@
             </objects>
             <point key="canvasLocation" x="1486" y="881"/>
         </scene>
+        <!--EnterPIN View Controller-->
+        <scene sceneID="iGY-oh-uJc">
+            <objects>
+                <viewController storyboardIdentifier="EnterPIN" id="cxR-90-yyB" customClass="EnterPINViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="m7B-v7-PcR"/>
+                        <viewControllerLayoutGuide type="bottom" id="0ea-NR-YaC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8WJ-fL-B8s">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzw-Ob-Q9t">
+                                <rect key="frame" x="279" y="141" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9QH-fS-Ifi"/>
+                                    <constraint firstAttribute="width" constant="42" id="Tuv-zU-gmk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter PIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mJp-IB-DEz">
+                                <rect key="frame" x="205" y="248" width="196" height="30"/>
+                                <color key="backgroundColor" red="0.92966382790000002" green="1" blue="0.87168665479999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="wIo-A5-nhJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATe-ga-s8c">
+                                <rect key="frame" x="247" y="317" width="113" height="30"/>
+                                <color key="backgroundColor" red="0.81544384969999995" green="1" blue="0.66989913400000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="Hgm-IE-Hfv"/>
+                                </constraints>
+                                <state key="normal" title="SUBMIT"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jzw-Ob-Q9t" firstAttribute="centerX" secondItem="8WJ-fL-B8s" secondAttribute="centerX" id="3Ga-BC-IvC"/>
+                            <constraint firstItem="ATe-ga-s8c" firstAttribute="top" secondItem="mJp-IB-DEz" secondAttribute="bottom" constant="39" id="Ckc-95-rAr"/>
+                            <constraint firstItem="mJp-IB-DEz" firstAttribute="centerX" secondItem="ATe-ga-s8c" secondAttribute="centerX" id="TAQ-Da-zZx"/>
+                            <constraint firstItem="mJp-IB-DEz" firstAttribute="top" secondItem="jzw-Ob-Q9t" secondAttribute="bottom" constant="86" id="kdU-y3-aAt"/>
+                            <constraint firstItem="jzw-Ob-Q9t" firstAttribute="top" secondItem="m7B-v7-PcR" secondAttribute="bottom" constant="121" id="uEw-xT-KR7"/>
+                            <constraint firstItem="mJp-IB-DEz" firstAttribute="leading" secondItem="8WJ-fL-B8s" secondAttribute="leading" constant="205" id="wFI-ZY-bOn"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uX2-3v-XLx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="758" y="1614"/>
+        </scene>
         <!--Pin Generation Controller-->
         <scene sceneID="v0b-7a-O0b">
             <objects>
@@ -147,7 +213,7 @@
                                     <constraint firstAttribute="height" constant="30" id="m3j-Fg-7JJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat PIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SGJ-DK-iY3">
                                 <rect key="frame" x="219" y="224" width="163" height="30"/>
@@ -156,7 +222,7 @@
                                     <constraint firstAttribute="height" constant="30" id="1lv-jf-ZGJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1j3-zU-rQw">
                                 <rect key="frame" x="230" y="282" width="140" height="51"/>

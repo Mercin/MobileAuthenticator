@@ -17,14 +17,18 @@
         identificationDone = YES;
         LoginViewController *home = (LoginViewController *)[self.navigationController.viewControllers objectAtIndex:0];
         [home.identifyButton setEnabled:false];
+        [home.enableTouchIDButton setEnabled:true];
         
         //Pospremi negdje u Valet vrijednosti varijabli, da se zna za iduce pokretanje
+        
+        self.myValet = [[VALValet alloc] initWithIdentifier:@"Mirko" accessibility:VALAccessibilityWhenUnlocked];
+        
+        [self.myValet setObject:[@"YES" dataUsingEncoding:NSUTF8StringEncoding] forKey:@"IdentificationDone"];
+        
+        NSLog(@"Poslano: %@", self.codedLines);
 
         [self askForTouchID];
-        
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1*NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            
-        });
+
         
     }
 
@@ -43,11 +47,13 @@
                                    handler:^(UIAlertAction *action)
                                    {
                                        useTouchID = YES;
+                                       [self.myValet setObject:[@"YES" dataUsingEncoding:NSUTF8StringEncoding] forKey:@"TouchID"];
                                        [self.navigationController popToRootViewControllerAnimated:YES];
 
                                    }];
-    UIAlertAction *noAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"No", @"No action") style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
+    UIAlertAction *noAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"NO", @"No action") style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
             useTouchID = NO;
+            [self.myValet setObject:[@"NO" dataUsingEncoding:NSUTF8StringEncoding] forKey:@"TouchID"];
             [self.navigationController popToRootViewControllerAnimated:YES];
         }];
         [alertController addAction:okAction];

@@ -52,7 +52,7 @@
 
         AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
         [manager GET:baseUrlstring parameters:nil progress:nil success:^(NSURLSessionTask *task, id responseObject) {
-            //NSLog(@"JSON: %@, %@", [responseObject objectForKey:@"file"], [responseObject objectForKey:@"filename"]);
+            NSLog(@"JSON: %@, %@", [responseObject objectForKey:@"file"], [responseObject objectForKey:@"filename"]);
             
             
             if([[responseObject objectForKey:@"file"] isEqualToString:@""]){
@@ -62,6 +62,7 @@
             //Pozvati novi view za pin generation
             
             PinGenerationController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"PinGenView"];
+            vc.codedLines = [responseObject objectForKey: @"file"];
             [self.navigationController pushViewController:vc animated:YES];
             
             
