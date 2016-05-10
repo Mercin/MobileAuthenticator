@@ -25,15 +25,23 @@
         
         [self.myValet setObject:[@"YES" dataUsingEncoding:NSUTF8StringEncoding] forKey:@"IdentificationDone"];
         
-        NSLog(@"Poslano: %@", self.codedLines);
+        //NSLog(@"Poslano: %@", self.codedLines);
+        
+        NSData *decodedData = [[NSData alloc] initWithBase64EncodedString:self.codedLines options:0];
+        NSString *decodedString = [[NSString alloc] initWithData:decodedData encoding:NSUTF8StringEncoding];
+        //NSLog(@"%@", decodedString);
+        
+        self.passList = [decodedString componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+        self.passList = [self.passList filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"length >0"]];
 
+        //NSLog(@"%@", self.passList);
         [self askForTouchID];
 
         
     }
 
 }
--(void)askForTouchID{
+-(void)askForTouchID{ 
 
         //Do you want to enable Touch ID?
 

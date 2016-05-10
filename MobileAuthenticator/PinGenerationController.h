@@ -16,8 +16,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *repeatPINTextbox;
 @property (weak, nonatomic) IBOutlet UIButton *submitButton;
 @property (nonatomic, strong) VALValet *myValet;
-@property (nonatomic, weak) NSString *codedLines;
-@property (nonatomic, weak) NSMutableArray *passList;
+@property (nonatomic, strong) NSString *codedLines;
+@property (nonatomic, strong) NSMutableArray *passList;
 
 
 @end
