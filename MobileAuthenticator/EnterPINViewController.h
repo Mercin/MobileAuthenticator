@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Valet/Valet.h>
 
 @interface EnterPINViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UITextField *PINtextbox;
+@property (weak, nonatomic) IBOutlet UIButton *submitButton;
+@property (nonatomic, strong) VALValet *myValet;
+@property (nonatomic, strong) NSString *savedPIN;
+@property (nonatomic, strong) NSString *authKey;
+@property (nonatomic, strong) NSMutableArray *passList;
+@property (nonatomic, strong) NSString *firstObject;
 @end

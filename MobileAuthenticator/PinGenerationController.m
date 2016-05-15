@@ -16,14 +16,16 @@
     if([self validateInput]){        //Gotova identifikacija, disejblat identify button
         identificationDone = YES;
         LoginViewController *home = (LoginViewController *)[self.navigationController.viewControllers objectAtIndex:0];
-        [home.identifyButton setEnabled:false];
-        [home.enableTouchIDButton setEnabled:true];
+        [home.identifyButton setEnabled:NO];
+        [home.enableTouchIDButton setEnabled:YES];
+        [home.loginButton setEnabled:YES];
         
         //Pospremi negdje u Valet vrijednosti varijabli, da se zna za iduce pokretanje
         
         self.myValet = [[VALValet alloc] initWithIdentifier:@"Mirko" accessibility:VALAccessibilityWhenUnlocked];
         
         [self.myValet setObject:[@"YES" dataUsingEncoding:NSUTF8StringEncoding] forKey:@"IdentificationDone"];
+        [self.myValet setString:self.enterPINTextbox.text forKey:@"PIN"];
         
         //NSLog(@"Poslano: %@", self.codedLines);
         
@@ -36,12 +38,15 @@
 
         //NSLog(@"%@", self.passList);
         [self askForTouchID];
+        
+        [self.myValet setString:self.authKey forKey:@"AuthKey"];
+        [self.myValet setObject:[NSKeyedArchiver archivedDataWithRootObject:self.passList] forKey:self.authKey];
 
         
     }
 
 }
--(void)askForTouchID{ 
+-(void)askForTouchID{
 
         //Do you want to enable Touch ID?
 

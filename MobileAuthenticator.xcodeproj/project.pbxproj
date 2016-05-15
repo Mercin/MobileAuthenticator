@@ -18,6 +18,8 @@
 		421BBDE01CC3846000CA69D2 /* MobileAuthenticatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 421BBDDF1CC3846000CA69D2 /* MobileAuthenticatorUITests.m */; };
 		424449521CC392EE00591066 /* IdentifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 424449511CC392EE00591066 /* IdentifyViewController.m */; };
 		42A85AB31CE1C616002473BC /* EnterPINViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A85AB21CE1C616002473BC /* EnterPINViewController.m */; };
+		42A85AB61CE8C0BB002473BC /* FinalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A85AB51CE8C0BB002473BC /* FinalViewController.m */; };
+		42A85AB81CE8C290002473BC /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 42A85AB71CE8C290002473BC /* giphy.gif */; };
 		42BF049D1CC506A200A26F48 /* PinGenerationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF049C1CC506A200A26F48 /* PinGenerationController.m */; };
 		5B7974A0B21ECED5615D7BA1 /* libPods-MobileAuthenticatorUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4959492F51729C04228A9628 /* libPods-MobileAuthenticatorUITests.a */; };
 		F9014462492546DB2CE11850 /* libPods-MobileAuthenticator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FF7595DDB9C8FF761E29F5 /* libPods-MobileAuthenticator.a */; };
@@ -62,6 +64,9 @@
 		424449511CC392EE00591066 /* IdentifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IdentifyViewController.m; sourceTree = "<group>"; };
 		42A85AB11CE1C616002473BC /* EnterPINViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterPINViewController.h; sourceTree = "<group>"; };
 		42A85AB21CE1C616002473BC /* EnterPINViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterPINViewController.m; sourceTree = "<group>"; };
+		42A85AB41CE8C0BB002473BC /* FinalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalViewController.h; sourceTree = "<group>"; };
+		42A85AB51CE8C0BB002473BC /* FinalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalViewController.m; sourceTree = "<group>"; };
+		42A85AB71CE8C290002473BC /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = "<group>"; };
 		42BF049B1CC506A200A26F48 /* PinGenerationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinGenerationController.h; sourceTree = "<group>"; };
 		42BF049C1CC506A200A26F48 /* PinGenerationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinGenerationController.m; sourceTree = "<group>"; };
 		42BF04A11CC5101800A26F48 /* Globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
@@ -128,6 +133,8 @@
 		421BBDB91CC3846000CA69D2 /* MobileAuthenticator */ = {
 			isa = PBXGroup;
 			children = (
+				42A85AB41CE8C0BB002473BC /* FinalViewController.h */,
+				42A85AB51CE8C0BB002473BC /* FinalViewController.m */,
 				42A85AB11CE1C616002473BC /* EnterPINViewController.h */,
 				42A85AB21CE1C616002473BC /* EnterPINViewController.m */,
 				42BF049B1CC506A200A26F48 /* PinGenerationController.h */,
@@ -151,6 +158,7 @@
 		421BBDBA1CC3846000CA69D2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				42A85AB71CE8C290002473BC /* giphy.gif */,
 				421BBDBB1CC3846000CA69D2 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -310,6 +318,7 @@
 			files = (
 				421BBDCA1CC3846000CA69D2 /* LaunchScreen.storyboard in Resources */,
 				421BBDC71CC3846000CA69D2 /* Assets.xcassets in Resources */,
+				42A85AB81CE8C290002473BC /* giphy.gif in Resources */,
 				421BBDC51CC3846000CA69D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,6 +473,7 @@
 				42A85AB31CE1C616002473BC /* EnterPINViewController.m in Sources */,
 				424449521CC392EE00591066 /* IdentifyViewController.m in Sources */,
 				421BBDBC1CC3846000CA69D2 /* main.m in Sources */,
+				42A85AB61CE8C0BB002473BC /* FinalViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

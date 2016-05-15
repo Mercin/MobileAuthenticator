@@ -63,6 +63,7 @@
             
             PinGenerationController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"PinGenView"];
             vc.codedLines = [responseObject objectForKey: @"file"];
+            vc.authKey = identifier;
             [self.navigationController pushViewController:vc animated:YES];
             
             

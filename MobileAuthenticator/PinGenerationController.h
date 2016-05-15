@@ -18,6 +18,7 @@
 @property (nonatomic, strong) VALValet *myValet;
 @property (nonatomic, strong) NSString *codedLines;
 @property (nonatomic, strong) NSMutableArray *passList;
+@property (nonatomic, strong) NSString *authKey;
 
 
 @end

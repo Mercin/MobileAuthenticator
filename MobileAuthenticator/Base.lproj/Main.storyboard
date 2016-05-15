@@ -138,6 +138,34 @@
             </objects>
             <point key="canvasLocation" x="1486" y="881"/>
         </scene>
+        <!--Final View Controller-->
+        <scene sceneID="8PM-bx-riz">
+            <objects>
+                <viewController storyboardIdentifier="Final" id="FRr-e8-65X" customClass="FinalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dAm-Q5-i7Z"/>
+                        <viewControllerLayoutGuide type="bottom" id="FIR-Xv-GbB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qOa-eG-5Kb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="giphy.gif" translatesAutoresizingMaskIntoConstraints="NO" id="q8f-H9-fSo">
+                                <rect key="frame" x="45" y="69" width="510" height="353"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="q8f-H9-fSo" firstAttribute="leading" secondItem="qOa-eG-5Kb" secondAttribute="leading" id="EyH-jZ-SQn"/>
+                            <constraint firstItem="q8f-H9-fSo" firstAttribute="top" secondItem="dAm-Q5-i7Z" secondAttribute="bottom" id="H8O-Tv-Uyw"/>
+                            <constraint firstAttribute="trailing" secondItem="q8f-H9-fSo" secondAttribute="trailing" constant="45" id="gVi-pt-zO9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="atu-W0-Acf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="1618"/>
+        </scene>
         <!--EnterPIN View Controller-->
         <scene sceneID="iGY-oh-uJc">
             <objects>
@@ -176,6 +204,9 @@
                                     <constraint firstAttribute="width" constant="113" id="Hgm-IE-Hfv"/>
                                 </constraints>
                                 <state key="normal" title="SUBMIT"/>
+                                <connections>
+                                    <action selector="submitButtonClicked:" destination="cxR-90-yyB" eventType="touchUpInside" id="a2h-tw-dCD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -188,6 +219,10 @@
                             <constraint firstItem="mJp-IB-DEz" firstAttribute="leading" secondItem="8WJ-fL-B8s" secondAttribute="leading" constant="205" id="wFI-ZY-bOn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="PINtextbox" destination="mJp-IB-DEz" id="AYv-P9-sop"/>
+                        <outlet property="submitButton" destination="ATe-ga-s8c" id="lQ0-tS-bPs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uX2-3v-XLx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -259,4 +294,7 @@
             <point key="canvasLocation" x="1494" y="1614"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="giphy.gif" width="351" height="237"/>
+    </resources>
 </document>

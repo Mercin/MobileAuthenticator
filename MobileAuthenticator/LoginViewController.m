@@ -10,6 +10,7 @@
 #import "IdentifyViewController.h"
 #import "Globals.h"
 #import "EnterPINViewController.h"
+#import "FinalViewController.h"
 
 @import LocalAuthentication;
 
@@ -38,6 +39,7 @@
     if(idDone == nil){
         [self.myValet setObject:[@"NO" dataUsingEncoding:NSUTF8StringEncoding] forKey:@"IdentificationDone"];
         identificationDone = NO;
+        [self.loginButton setEnabled:NO];
     }
     else{
         identificationDone = [[[NSString alloc] initWithData:idDone encoding:NSUTF8StringEncoding] boolValue];
@@ -53,6 +55,11 @@
 
     if(identificationDone == YES){
         [self.identifyButton setEnabled:NO];
+        [self.loginButton setEnabled:YES];
+    }
+    else{
+        [self.identifyButton setEnabled:YES];
+        [self.loginButton setEnabled:NO];
     }
     
     
@@ -114,14 +121,8 @@
                                   dispatch_async(dispatch_get_main_queue(), ^{
                                       
                                       if (success) {
-                                          UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Success"
-                                                                                          message:@"You are the device owner!"
-                                                                                         delegate:nil
-                                                                                cancelButtonTitle:@"Ok"
-                                                                                otherButtonTitles:nil];
-                                          [alert show];
-                                          
-                                          NSLog(@"YAY");
+                                          FinalViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"Final"];
+                                          [self.navigationController pushViewController:vc animated:YES];
                                           
                                           
                                           
