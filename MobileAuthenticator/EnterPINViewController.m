@@ -9,9 +9,11 @@
 #import "EnterPINViewController.h"
 #import <Valet/Valet.h>
 #import "AFNetworking.h"
+#import "Globals.h"
+#import "FinalViewController.h"
 
 @interface EnterPINViewController ()
-
+@property (nonatomic) NSInteger *failCounter;
 @end
 
 @implementation EnterPINViewController
@@ -19,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.failCounter = 0;
     self.myValet = [[VALValet alloc] initWithIdentifier:@"Mirko" accessibility:VALAccessibilityWhenUnlocked];
     self.savedPIN = [self.myValet stringForKey:@"PIN"];
     
@@ -66,7 +68,35 @@
                                                     @"key" : self.firstObject
                                                     } progress:nil success:^(NSURLSessionTask *task, id responseObject) {
                                                         NSLog(@"JSON: %@", responseObject);
-                                               
+                                                        
+                                                        //obrisati iz liste pass, spremiti u keychain i pushati finalview
+                                                        
+                                                        NSMutableArray * tempArray = [self.passList mutableCopy];
+                                                        
+                                                        for (NSString * pass in self.passList){
+                                                            
+                                                            if ([pass isEqualToString: self.firstObject])
+                                                                [tempArray removeObject: pass];
+                                                                
+                                                                }
+                                                        self.passList = tempArray;
+                                                        
+                                                        //spremi u keychain
+                                                        
+                                                        [self.myValet setObject:[NSKeyedArchiver archivedDataWithRootObject:self.passList] forKey:self.authKey];
+                                                        
+                                                        if([[responseObject objectForKey:@"response"] isEqualToString:@"YES."]){
+                                                            //pushaj view
+                                                            
+                                                            FinalViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"Final"];
+                                                            [self.navigationController pushViewController:vc animated:YES];
+
+                                                        }
+                                                        else{
+                                                            [self authFailed];
+                                                        }
+                                                    
+             
                                                     } failure:^(NSURLSessionTask *operation, NSError *error) {
                                                         // NSLog(@"Error: %@", error);
                                                         
@@ -86,6 +116,15 @@
                                            NSLog(@"OK action");
                                        }];
             [alertController addAction:okAction];
+            self.failCounter++;
+
+            
+            
+            if(self.failCounter == 3){
+                isBlocked = YES;
+                [self.navigationController popToRootViewControllerAnimated:YES];
+
+            }
             [self presentViewController:alertController animated:YES completion:nil];
         }
     }
@@ -107,6 +146,7 @@
     [self presentViewController:alertController animated:YES completion:nil];
     
     [self.myValet setObject:[NSKeyedArchiver archivedDataWithRootObject:self.passList] forKey:self.authKey];
+    
     
 }
 @end

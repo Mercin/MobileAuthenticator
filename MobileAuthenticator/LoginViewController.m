@@ -108,7 +108,15 @@
 }
 
 - (IBAction)loginButtonClicked:(id)sender {
-    
+    if(isBlocked == YES){
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
+                                                        message:@"Your account is blocked"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"Ok"
+                                              otherButtonTitles:nil];
+        [alert show];
+        return;
+    }
     
     if(useTouchID == YES){
         LAContext *context = [[LAContext alloc] init];

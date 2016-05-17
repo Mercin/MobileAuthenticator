@@ -12,3 +12,4 @@ static NSInteger const PINMissmatch = 2;
 static NSInteger const TooShort = 3;
 static bool useTouchID = NO;
 static bool identificationDone = NO;
+static bool isBlocked = NO;
