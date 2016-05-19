@@ -14,7 +14,9 @@
 @property (nonatomic, strong) VALValet *myValet;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *enableTouchIDButton;
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
-
+@property (nonatomic, strong) NSString *authKey;
+@property (nonatomic, strong) NSMutableArray *passList;
+@property (nonatomic, strong) NSString *firstObject;
 
 @end
 

@@ -11,6 +11,7 @@
 #import "Globals.h"
 #import "EnterPINViewController.h"
 #import "FinalViewController.h"
+#import "AFNetworking.h"
 
 @import LocalAuthentication;
 
@@ -129,6 +130,65 @@
                                   dispatch_async(dispatch_get_main_queue(), ^{
                                       
                                       if (success) {
+                                          
+                                          //pocetak copy
+                                          
+                                          self.authKey = [self.myValet stringForKey:@"AuthKey"];
+                                          NSData *dataList = [self.myValet objectForKey:self.authKey];
+                                          self.passList = [NSKeyedUnarchiver unarchiveObjectWithData:dataList];
+                                          //NSLog(@"%@", self.passList);
+                                          
+                                          self.firstObject = self.passList.count > 0 ? self.passList[0] : nil;
+                                          
+                                          if(self.firstObject == nil){
+                                              [self authFailed];
+                                              
+                                          }
+                                          
+                                          NSString *baseURLString = @"http://localhost:3000/requestinfos/authorize";
+                                          
+                                          AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+                                          [manager GET:baseURLString parameters:@{@"filename" : self.authKey,
+                                                                                  @"key" : self.firstObject
+                                                                                  } progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+                                                                                      NSLog(@"JSON: %@", responseObject);
+                                                                                      
+                                                                                      //obrisati iz liste pass, spremiti u keychain i pushati finalview
+                                                                                      
+                                                                                      NSMutableArray * tempArray = [self.passList mutableCopy];
+                                                                                      
+                                                                                      for (NSString * pass in self.passList){
+                                                                                          
+                                                                                          if ([pass isEqualToString: self.firstObject])
+                                                                                              [tempArray removeObject: pass];
+                                                                                          
+                                                                                      }
+                                                                                      self.passList = tempArray;
+                                                                                      
+                                                                                      //spremi u keychain
+                                                                                      
+                                                                                      [self.myValet setObject:[NSKeyedArchiver archivedDataWithRootObject:self.passList] forKey:self.authKey];
+                                                                                      
+                                                                                      if([[responseObject objectForKey:@"response"] isEqualToString:@"YES."]){
+                                                                                          //pushaj view
+                                                                                          
+                                                                                          FinalViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"Final"];
+                                                                                          [self.navigationController pushViewController:vc animated:YES];
+                                                                                          
+                                                                                      }
+                                                                                      else{
+                                                                                          [self authFailed];
+                                                                                      }
+                                                                                      
+                                                                                      
+                                                                                  } failure:^(NSURLSessionTask *operation, NSError *error) {
+                                                                                      // NSLog(@"Error: %@", error);
+                                                                                      
+                                                                                  }];
+                                          
+                                          
+                                          //kraj copy
+                                          
                                           FinalViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"Final"];
                                           [self.navigationController pushViewController:vc animated:YES];
                                           
@@ -160,6 +220,26 @@
         EnterPINViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"EnterPIN"];
         [self.navigationController pushViewController:vc animated:YES];
     }
+}
+
+-(void)authFailed{
+    UIAlertController *alertController = [UIAlertController
+                                          alertControllerWithTitle:@"Error"
+                                          message:@"Authorization failed."
+                                          preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *okAction = [UIAlertAction
+                               actionWithTitle:NSLocalizedString(@"OK", @"OK action")
+                               style:UIAlertActionStyleDefault
+                               handler:^(UIAlertAction *action)
+                               {
+                                   NSLog(@"OK action");
+                               }];
+    [alertController addAction:okAction];
+    [self presentViewController:alertController animated:YES completion:nil];
+    
+    [self.myValet setObject:[NSKeyedArchiver archivedDataWithRootObject:self.passList] forKey:self.authKey];
+    
+    
 }
 
 @end
