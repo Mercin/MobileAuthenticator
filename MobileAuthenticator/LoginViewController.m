@@ -187,13 +187,6 @@
                                                                                   }];
                                           
                                           
-                                          //kraj copy
-                                          
-                                          FinalViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"Final"];
-                                          [self.navigationController pushViewController:vc animated:YES];
-                                          
-                                          
-                                          
                                       } else {
                                           EnterPINViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:@"EnterPIN"];
                                           [self.navigationController pushViewController:vc animated:YES];

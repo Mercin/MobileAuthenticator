@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MobileAuthenticator/LoginViewController.h"
-            timestampString = "485199183.466804"
+            timestampString = "485362607.694007"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
             landmarkName = "loginButton"
             landmarkType = "19">
          </BreakpointContent>
