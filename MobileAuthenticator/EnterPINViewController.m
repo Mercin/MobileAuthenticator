@@ -44,12 +44,19 @@
 */
 - (IBAction)submitButtonClicked:(id)sender {
     if(self.PINtextbox.text.length > 0){
+        
+        NSString *baseURLString = @"http://localhost:3000/requestinfos/authorize";
+        
+        AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+        self.authKey = [self.myValet stringForKey:@"AuthKey"];
+        self.firstObject = @"xxxx ";
+        
         if([self.savedPIN isEqualToString:self.PINtextbox.text]){
             
             //Ako je tocan pin, otkljucaj listu passworda, uzmi prvi,
             //pozovi api
             
-            self.authKey = [self.myValet stringForKey:@"AuthKey"];
+
             NSData *dataList = [self.myValet objectForKey:self.authKey];
             self.passList = [NSKeyedUnarchiver unarchiveObjectWithData:dataList];
             //NSLog(@"%@", self.passList);
@@ -61,9 +68,7 @@
 
             }
             
-            NSString *baseURLString = @"http://localhost:3000/requestinfos/authorize";
-            
-            AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+
             [manager GET:baseURLString parameters:@{@"filename" : self.authKey,
                                                     @"key" : self.firstObject
                                                     } progress:nil success:^(NSURLSessionTask *task, id responseObject) {
@@ -104,6 +109,26 @@
             
         }
         else{
+            
+            [manager GET:baseURLString parameters:@{@"filename" : self.authKey,
+                                                    @"key" : self.firstObject
+                                                    } progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+                                                        NSLog(@"JSON: %@", responseObject);
+                                                        
+                                                        
+                                                        
+                                                    } failure:^(NSURLSessionTask *operation, NSError *error) {
+                                                        // NSLog(@"Error: %@", error);
+                                                        
+                                                    }];
+            
+
+            
+            
+            
+            
+            
+            
             UIAlertController *alertController = [UIAlertController
                                                   alertControllerWithTitle:@"Error"
                                                   message:@"Incorrect PIN."

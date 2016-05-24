@@ -92,7 +92,7 @@
             // ISPRAVAN UNOS
             // provjeriti da pin ima barem 6 znaka
             if([self.enterPINTextbox.text stringByTrimmingCharactersInSet:
-                [NSCharacterSet whitespaceAndNewlineCharacterSet]].length < 6){
+                [NSCharacterSet whitespaceAndNewlineCharacterSet]].length < 3){
                 [self presentAlert:TooShort];
             }
 
