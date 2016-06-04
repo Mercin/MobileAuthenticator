@@ -58,7 +58,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.34606707594212094" green="0.70230881605638817" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="iMF-OT-vcY" firstAttribute="top" secondItem="SmU-Ol-4gX" secondAttribute="bottom" constant="130" id="258-H6-ZmF"/>
                             <constraint firstItem="iMF-OT-vcY" firstAttribute="leading" secondItem="HZL-rK-8Co" secondAttribute="leading" id="L6t-Zi-Waq"/>
@@ -109,7 +109,7 @@
                                     <action selector="submitButtonClicked:" destination="G6C-zj-1oO" eventType="touchUpInside" id="LtF-my-bpL"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Identification key" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y7z-48-ln9">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Identification key" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y7z-48-ln9" customClass="JVFloatLabeledTextField">
                                 <rect key="frame" x="169" y="187" width="220" height="30"/>
                                 <color key="backgroundColor" red="0.92966382786508039" green="1" blue="0.87168665481398611" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -120,7 +120,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.34606707590000002" green="0.70230881609999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="y7z-48-ln9" firstAttribute="top" secondItem="9DD-H9-9EM" secondAttribute="bottom" constant="167" id="AGh-kQ-1Lf"/>
                             <constraint firstItem="y7z-48-ln9" firstAttribute="centerX" secondItem="7o0-y5-V5v" secondAttribute="centerX" id="Jpy-3Z-c19"/>
@@ -154,7 +154,7 @@
                                 <rect key="frame" x="45" y="69" width="510" height="353"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.34606707590000002" green="0.70230881609999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="q8f-H9-fSo" firstAttribute="leading" secondItem="qOa-eG-5Kb" secondAttribute="leading" id="EyH-jZ-SQn"/>
                             <constraint firstItem="q8f-H9-fSo" firstAttribute="top" secondItem="dAm-Q5-i7Z" secondAttribute="bottom" id="H8O-Tv-Uyw"/>
@@ -185,10 +185,10 @@
                                     <constraint firstAttribute="width" constant="42" id="Tuv-zU-gmk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter PIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mJp-IB-DEz">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter PIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mJp-IB-DEz" customClass="JVFloatLabeledTextField">
                                 <rect key="frame" x="205" y="248" width="196" height="30"/>
                                 <color key="backgroundColor" red="0.92966382790000002" green="1" blue="0.87168665479999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -197,7 +197,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATe-ga-s8c">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATe-ga-s8c">
                                 <rect key="frame" x="247" y="317" width="113" height="30"/>
                                 <color key="backgroundColor" red="0.81544384969999995" green="1" blue="0.66989913400000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -209,7 +209,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.34606707590000002" green="0.70230881609999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="jzw-Ob-Q9t" firstAttribute="centerX" secondItem="8WJ-fL-B8s" secondAttribute="centerX" id="3Ga-BC-IvC"/>
                             <constraint firstItem="ATe-ga-s8c" firstAttribute="top" secondItem="mJp-IB-DEz" secondAttribute="bottom" constant="39" id="Ckc-95-rAr"/>
@@ -240,7 +240,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter PIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nwX-Zm-NeZ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter PIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nwX-Zm-NeZ" customClass="JVFloatLabeledTextField">
                                 <rect key="frame" x="219" y="153" width="163" height="30"/>
                                 <color key="backgroundColor" red="0.92966382790000002" green="1" blue="0.87168665479999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -250,7 +250,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat PIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SGJ-DK-iY3">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat PIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SGJ-DK-iY3" customClass="JVFloatLabeledTextField">
                                 <rect key="frame" x="219" y="224" width="163" height="30"/>
                                 <color key="backgroundColor" red="0.92966382790000002" green="1" blue="0.87168665479999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -271,7 +271,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.34606707590000002" green="0.70230881609999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="nwX-Zm-NeZ" firstAttribute="top" secondItem="7IR-yh-G2T" secondAttribute="bottom" constant="133" id="BXT-ae-8Ka"/>
                             <constraint firstItem="SGJ-DK-iY3" firstAttribute="centerX" secondItem="1j3-zU-rQw" secondAttribute="centerX" id="DcS-jK-ehl"/>

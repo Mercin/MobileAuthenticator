@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JVFloatLabeledTextField.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-MobileAuthenticator.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,32 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>09FA060F1A0492FB25232F489AC4E573</key>
+		<key>0BF8569A1D17D47E1A86EB020383E8D1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>6EBE8F10C70C07B8CB8452A2FD039515</key>
+		<key>1C3436CEA5C3D39764C5F54374794ECB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>742D207FEB20E73B69F5D757619A6083</key>
+		<key>25AA198F183ECBC8A0B9CD432FD20EA5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>928353533005A4198EBDA5B700D37B64</key>
+		<key>39C3578EFF9B7523B4B38CD3E6B921B3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9375AE7F1E3752386712D316444E91B4</key>
+		<key>735882DA95E7FCCEC084FC1C5384FF8A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E2549598BD545907AB5B84C477760C1F</key>
+		<key>7D18C143D44C246ADF8DF7BBCB161E99</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8886792A7E9A33192460ED8645F7E8D5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

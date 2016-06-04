@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AFNetworking.h"
 #import "Globals.h"
+#import "JVFloatLabeledTextField.h"
 
 @interface IdentifyViewController : UIViewController
 

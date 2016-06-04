@@ -1,6 +1,6 @@
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$CONFIGURATION_BUILD_DIR/AFNetworking" "$CONFIGURATION_BUILD_DIR/JSONModel" "$CONFIGURATION_BUILD_DIR/JVFloatLabeledTextField" "$CONFIGURATION_BUILD_DIR/Valet"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/JSONModel" "${PODS_ROOT}/Headers/Public/Valet"
-LIBRARY_SEARCH_PATHS = $(inherited) "$CONFIGURATION_BUILD_DIR/AFNetworking" "$CONFIGURATION_BUILD_DIR/JSONModel" "$CONFIGURATION_BUILD_DIR/Valet"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/JSONModel" -isystem "${PODS_ROOT}/Headers/Public/Valet"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"AFNetworking" -l"JSONModel" -l"Valet" -framework "CoreGraphics" -framework "MobileCoreServices" -framework "Security" -framework "SystemConfiguration"
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/AFNetworking/AFNetworking.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/JSONModel/JSONModel.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/JVFloatLabeledTextField/JVFloatLabeledTextField.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/Valet/Valet.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "AFNetworking" -framework "JSONModel" -framework "JVFloatLabeledTextField" -framework "Valet"
 PODS_ROOT = ${SRCROOT}/Pods

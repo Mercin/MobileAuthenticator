@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A8FE1DA13D6492FA44B7F77 /* libPods-MobileAuthenticatorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB2DE209B4789302CE0CBC9 /* libPods-MobileAuthenticatorTests.a */; };
+		2D1FD4878ACFF30668ABE89C /* Pods_MobileAuthenticatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F7E96BDCDD7B10F5EB110E0 /* Pods_MobileAuthenticatorUITests.framework */; };
 		421BBDBC1CC3846000CA69D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 421BBDBB1CC3846000CA69D2 /* main.m */; };
 		421BBDBF1CC3846000CA69D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 421BBDBE1CC3846000CA69D2 /* AppDelegate.m */; };
 		421BBDC21CC3846000CA69D2 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 421BBDC11CC3846000CA69D2 /* LoginViewController.m */; };
@@ -20,9 +20,10 @@
 		42A85AB31CE1C616002473BC /* EnterPINViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A85AB21CE1C616002473BC /* EnterPINViewController.m */; };
 		42A85AB61CE8C0BB002473BC /* FinalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A85AB51CE8C0BB002473BC /* FinalViewController.m */; };
 		42A85AB81CE8C290002473BC /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 42A85AB71CE8C290002473BC /* giphy.gif */; };
+		42AEDB881D03369D00F19B38 /* MyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AEDB871D03369D00F19B38 /* MyButton.m */; };
 		42BF049D1CC506A200A26F48 /* PinGenerationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF049C1CC506A200A26F48 /* PinGenerationController.m */; };
-		5B7974A0B21ECED5615D7BA1 /* libPods-MobileAuthenticatorUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4959492F51729C04228A9628 /* libPods-MobileAuthenticatorUITests.a */; };
-		F9014462492546DB2CE11850 /* libPods-MobileAuthenticator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FF7595DDB9C8FF761E29F5 /* libPods-MobileAuthenticator.a */; };
+		499C736E6BD41E61800C2399 /* Pods_MobileAuthenticator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0933477FCF037B28C2A237C7 /* Pods_MobileAuthenticator.framework */; };
+		AB81845D4758BF950D20C398 /* Pods_MobileAuthenticatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B191A705832BDDAABEE6A86 /* Pods_MobileAuthenticatorTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 
 /* Begin PBXFileReference section */
 		07EB5C3B6E5C4EA2236E0173 /* Pods-MobileAuthenticatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAuthenticatorUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileAuthenticatorUITests/Pods-MobileAuthenticatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		0933477FCF037B28C2A237C7 /* Pods_MobileAuthenticator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileAuthenticator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		421BBDB71CC3846000CA69D2 /* MobileAuthenticator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileAuthenticator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		421BBDBB1CC3846000CA69D2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		421BBDBD1CC3846000CA69D2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,17 +69,18 @@
 		42A85AB41CE8C0BB002473BC /* FinalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FinalViewController.h; sourceTree = "<group>"; };
 		42A85AB51CE8C0BB002473BC /* FinalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FinalViewController.m; sourceTree = "<group>"; };
 		42A85AB71CE8C290002473BC /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = "<group>"; };
+		42AEDB861D03369D00F19B38 /* MyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyButton.h; sourceTree = "<group>"; };
+		42AEDB871D03369D00F19B38 /* MyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyButton.m; sourceTree = "<group>"; };
 		42BF049B1CC506A200A26F48 /* PinGenerationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinGenerationController.h; sourceTree = "<group>"; };
 		42BF049C1CC506A200A26F48 /* PinGenerationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinGenerationController.m; sourceTree = "<group>"; };
 		42BF04A11CC5101800A26F48 /* Globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
-		4959492F51729C04228A9628 /* libPods-MobileAuthenticatorUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileAuthenticatorUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7017CBF9F86191ADB10E4AED /* Pods-MobileAuthenticatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAuthenticatorUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileAuthenticatorUITests/Pods-MobileAuthenticatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7B191A705832BDDAABEE6A86 /* Pods_MobileAuthenticatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileAuthenticatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F7E96BDCDD7B10F5EB110E0 /* Pods_MobileAuthenticatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileAuthenticatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABB252B8940C475C78BF2CCC /* Pods-MobileAuthenticator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAuthenticator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileAuthenticator/Pods-MobileAuthenticator.debug.xcconfig"; sourceTree = "<group>"; };
 		B43852F4F0AA472B9AF58518 /* Pods-MobileAuthenticator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAuthenticator.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileAuthenticator/Pods-MobileAuthenticator.release.xcconfig"; sourceTree = "<group>"; };
 		B9D906A86CCFA37348666A92 /* Pods-MobileAuthenticatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAuthenticatorTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileAuthenticatorTests/Pods-MobileAuthenticatorTests.release.xcconfig"; sourceTree = "<group>"; };
-		BFB2DE209B4789302CE0CBC9 /* libPods-MobileAuthenticatorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileAuthenticatorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DE1D270D2D287CF1B17F3C /* Pods-MobileAuthenticatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileAuthenticatorTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileAuthenticatorTests/Pods-MobileAuthenticatorTests.debug.xcconfig"; sourceTree = "<group>"; };
-		F0FF7595DDB9C8FF761E29F5 /* libPods-MobileAuthenticator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileAuthenticator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9014462492546DB2CE11850 /* libPods-MobileAuthenticator.a in Frameworks */,
+				499C736E6BD41E61800C2399 /* Pods_MobileAuthenticator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A8FE1DA13D6492FA44B7F77 /* libPods-MobileAuthenticatorTests.a in Frameworks */,
+				AB81845D4758BF950D20C398 /* Pods_MobileAuthenticatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B7974A0B21ECED5615D7BA1 /* libPods-MobileAuthenticatorUITests.a in Frameworks */,
+				2D1FD4878ACFF30668ABE89C /* Pods_MobileAuthenticatorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,6 +154,8 @@
 				421BBDCB1CC3846000CA69D2 /* Info.plist */,
 				421BBDBA1CC3846000CA69D2 /* Supporting Files */,
 				42BF04A11CC5101800A26F48 /* Globals.h */,
+				42AEDB861D03369D00F19B38 /* MyButton.h */,
+				42AEDB871D03369D00F19B38 /* MyButton.m */,
 			);
 			path = MobileAuthenticator;
 			sourceTree = "<group>";
@@ -185,9 +190,9 @@
 		5243AA6DEF430B402BD0D953 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F0FF7595DDB9C8FF761E29F5 /* libPods-MobileAuthenticator.a */,
-				BFB2DE209B4789302CE0CBC9 /* libPods-MobileAuthenticatorTests.a */,
-				4959492F51729C04228A9628 /* libPods-MobileAuthenticatorUITests.a */,
+				0933477FCF037B28C2A237C7 /* Pods_MobileAuthenticator.framework */,
+				7B191A705832BDDAABEE6A86 /* Pods_MobileAuthenticatorTests.framework */,
+				9F7E96BDCDD7B10F5EB110E0 /* Pods_MobileAuthenticatorUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -474,6 +479,7 @@
 				424449521CC392EE00591066 /* IdentifyViewController.m in Sources */,
 				421BBDBC1CC3846000CA69D2 /* main.m in Sources */,
 				42A85AB61CE8C0BB002473BC /* FinalViewController.m in Sources */,
+				42AEDB881D03369D00F19B38 /* MyButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
