@@ -10,4 +10,6 @@
 
 @interface MyButton : UIButton
 
+-(id)initMyButton:(NSCoder *)coder;
+
 @end
