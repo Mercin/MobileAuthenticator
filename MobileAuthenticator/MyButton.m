@@ -10,21 +10,15 @@
 
 @implementation MyButton
 
-
-
-
--(id)initMyButton:(NSCoder *)coder{
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
     
-    self = [super initWithCoder:coder];
-    if (self) {
-        self = [[UIButton alloc] init ];
-        self.layer.cornerRadius = 3.0;
-        self.layer.borderWidth = 1.0;
-        self.layer.borderColor = [UIColor whiteColor].CGColor;
-        
-    }
+    self.layer.cornerRadius = 3.0;
+    self.layer.borderWidth = 1.0;
+    self.layer.borderColor = [UIColor whiteColor].CGColor;
+    
     return self;
-    
 }
 
 @end
