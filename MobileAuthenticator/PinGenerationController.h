@@ -9,12 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <Valet/Valet.h>
 #import "Globals.h"
+#import "MyButton.h"
 
 @interface PinGenerationController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *enterPINTextbox;
 @property (weak, nonatomic) IBOutlet UITextField *repeatPINTextbox;
-@property (weak, nonatomic) IBOutlet UIButton *submitButton;
+@property (weak, nonatomic) IBOutlet MyButton *submitButton;
 @property (nonatomic, strong) VALValet *myValet;
 @property (nonatomic, strong) NSString *codedLines;
 @property (nonatomic, strong) NSMutableArray *passList;

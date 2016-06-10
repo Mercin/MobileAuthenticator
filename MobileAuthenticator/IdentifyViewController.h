@@ -10,13 +10,14 @@
 #import "AFNetworking.h"
 #import "Globals.h"
 #import "JVFloatLabeledTextField.h"
+#import "MyButton.h"
 
 @interface IdentifyViewController : UIViewController
 
 
 @property (weak, nonatomic) IBOutlet UITextField *identifierTextbox;
 
-@property (weak, nonatomic) IBOutlet UIButton *submitButton;
+@property (weak, nonatomic) IBOutlet MyButton *submitButton;
 
 @end
 
