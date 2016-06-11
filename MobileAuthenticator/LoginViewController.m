@@ -57,10 +57,12 @@
     if(identificationDone == YES){
         [self.identifyButton setEnabled:NO];
         [self.loginButton setEnabled:YES];
+        [self.enableTouchIDButton setEnabled:YES];
     }
     else{
         [self.identifyButton setEnabled:YES];
         [self.loginButton setEnabled:NO];
+        [self.enableTouchIDButton setEnabled:NO];
     }
     
     
