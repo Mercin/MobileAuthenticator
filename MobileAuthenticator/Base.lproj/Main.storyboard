@@ -156,15 +156,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="giphy.gif" translatesAutoresizingMaskIntoConstraints="NO" id="q8f-H9-fSo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cute-puppy-3r.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="q8f-H9-fSo">
                                 <rect key="frame" x="45" y="69" width="510" height="353"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.34606707590000002" green="0.70230881609999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.30890748620000003" green="0.54122595480000002" blue="0.72022251309999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="q8f-H9-fSo" firstAttribute="leading" secondItem="qOa-eG-5Kb" secondAttribute="leading" id="EyH-jZ-SQn"/>
-                            <constraint firstItem="q8f-H9-fSo" firstAttribute="top" secondItem="dAm-Q5-i7Z" secondAttribute="bottom" id="H8O-Tv-Uyw"/>
-                            <constraint firstAttribute="trailing" secondItem="q8f-H9-fSo" secondAttribute="trailing" constant="45" id="gVi-pt-zO9"/>
+                            <constraint firstItem="q8f-H9-fSo" firstAttribute="centerX" secondItem="qOa-eG-5Kb" secondAttribute="centerX" id="C0V-b6-D5H"/>
+                            <constraint firstItem="q8f-H9-fSo" firstAttribute="centerY" secondItem="qOa-eG-5Kb" secondAttribute="centerY" id="GyT-eP-lVY"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -191,7 +190,7 @@
                                     <constraint firstAttribute="width" constant="120" id="gkV-z1-h2o"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATe-ga-s8c" customClass="MyButton">
                                 <rect key="frame" x="244" y="310" width="113" height="30"/>
@@ -244,7 +243,7 @@
                                     <constraint firstAttribute="width" constant="120" id="loT-ae-OFy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat PIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SGJ-DK-iY3" customClass="JVFloatLabeledTextField">
                                 <rect key="frame" x="240" y="218" width="120" height="42"/>
@@ -253,7 +252,7 @@
                                     <constraint firstAttribute="width" constant="120" id="NHh-I0-uw9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1j3-zU-rQw" customClass="MyButton">
                                 <rect key="frame" x="265" y="292" width="70" height="30"/>
@@ -291,6 +290,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="giphy.gif" width="351" height="237"/>
+        <image name="cute-puppy-3r.jpg" width="500" height="347"/>
     </resources>
 </document>
