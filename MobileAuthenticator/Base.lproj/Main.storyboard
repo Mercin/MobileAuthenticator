@@ -104,7 +104,6 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Identification key" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y7z-48-ln9" customClass="JVFloatLabeledTextField">
                                 <rect key="frame" x="221" y="227" width="158" height="30"/>
-                                <color key="backgroundColor" red="0.92966382786508039" green="1" blue="0.87168665481398611" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="158" id="30B-b9-N4D"/>
                                     <constraint firstAttribute="height" constant="30" id="8bm-Vq-11a"/>
@@ -185,7 +184,6 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter PIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mJp-IB-DEz" customClass="JVFloatLabeledTextField">
                                 <rect key="frame" x="240" y="250" width="120" height="42"/>
-                                <color key="backgroundColor" red="0.92966382790000002" green="1" blue="0.87168665479999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="gkV-z1-h2o"/>
                                 </constraints>
@@ -238,7 +236,6 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter PIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nwX-Zm-NeZ" customClass="JVFloatLabeledTextField">
                                 <rect key="frame" x="241" y="147" width="120" height="42"/>
-                                <color key="backgroundColor" red="0.92966382790000002" green="1" blue="0.87168665479999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="loT-ae-OFy"/>
                                 </constraints>
@@ -247,7 +244,6 @@
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat PIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SGJ-DK-iY3" customClass="JVFloatLabeledTextField">
                                 <rect key="frame" x="240" y="218" width="120" height="42"/>
-                                <color key="backgroundColor" red="0.92966382790000002" green="1" blue="0.87168665479999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="NHh-I0-uw9"/>
                                 </constraints>
