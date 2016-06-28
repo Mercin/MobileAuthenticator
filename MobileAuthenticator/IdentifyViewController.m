@@ -9,9 +9,12 @@
 #import "IdentifyViewController.h"
 #import "AFNetworking.h"
 #import "PinGenerationController.h"
-
+#import <JVFloatLabeledTextField/JVFloatLabeledTextField.h>
 
 @interface IdentifyViewController ()
+
+@property (weak, nonatomic) IBOutlet JVFloatLabeledTextField *identifierTextbox;
+@property (weak, nonatomic) IBOutlet MyButton *submitButton;
 
 @end
 
@@ -24,7 +27,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    
+    self.title = @"Identify";
 }
 
 - (void)didReceiveMemoryWarning {

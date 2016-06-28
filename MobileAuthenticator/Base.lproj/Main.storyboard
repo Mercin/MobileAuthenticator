@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WV0-b3-vT5">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WV0-b3-vT5">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -9,6 +9,7 @@
         <scene sceneID="ugd-ND-O5e">
             <objects>
                 <navigationController id="WV0-b3-vT5" sceneMemberID="viewController">
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="c6t-OP-hTY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -34,29 +35,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HZL-rK-8Co" customClass="MyButton">
-                                <rect key="frame" x="194" y="314" width="213" height="65"/>
+                                <rect key="frame" x="150" y="314" width="300" height="50"/>
                                 <color key="backgroundColor" red="0.30890748620000003" green="0.54122595480000002" blue="0.72022251309999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="YCt-55-0L5"/>
+                                    <constraint firstAttribute="height" constant="50" id="YCt-55-0L5"/>
                                 </constraints>
                                 <state key="normal" title="LOGIN">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="YCt-55-0L5"/>
+                                    </mask>
+                                </variation>
                                 <connections>
-                                    <action selector="loginButtonClicked:" destination="Hcl-w3-Pbd" eventType="touchUpInside" id="Wdp-n5-gJy"/>
+                                    <action selector="loginButtonClicked:" destination="Hcl-w3-Pbd" eventType="touchUpInside" id="8eO-3A-WGa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMF-OT-vcY" customClass="MyButton">
-                                <rect key="frame" x="194" y="194" width="213" height="65"/>
+                                <rect key="frame" x="150" y="224" width="300" height="50"/>
                                 <color key="backgroundColor" red="0.30890748620000003" green="0.54122595480000002" blue="0.72022251309999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="65" id="NH8-ii-UeT"/>
-                                    <constraint firstAttribute="height" constant="65" id="cYY-xw-n82"/>
-                                    <constraint firstAttribute="width" constant="213" id="p8z-oX-Tli"/>
+                                    <constraint firstAttribute="height" constant="50" id="cYY-xw-n82"/>
+                                    <constraint firstAttribute="width" constant="300" id="p8z-oX-Tli"/>
                                 </constraints>
                                 <state key="normal" title="IDENTIFY">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="NH8-ii-UeT"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="identifyClicked:" destination="Hcl-w3-Pbd" eventType="touchUpInside" id="cqz-Se-FmO"/>
                                 </connections>
@@ -64,14 +75,19 @@
                         </subviews>
                         <color key="backgroundColor" red="0.30890748622002473" green="0.54122595475400403" blue="0.7202225130890052" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="iMF-OT-vcY" firstAttribute="top" secondItem="SmU-Ol-4gX" secondAttribute="bottom" constant="130" id="258-H6-ZmF"/>
+                            <constraint firstItem="iMF-OT-vcY" firstAttribute="top" secondItem="SmU-Ol-4gX" secondAttribute="bottom" constant="160" id="258-H6-ZmF"/>
                             <constraint firstItem="iMF-OT-vcY" firstAttribute="leading" secondItem="HZL-rK-8Co" secondAttribute="leading" id="L6t-Zi-Waq"/>
-                            <constraint firstItem="HZL-rK-8Co" firstAttribute="top" secondItem="iMF-OT-vcY" secondAttribute="bottom" constant="55" id="Soa-If-1vb"/>
+                            <constraint firstItem="HZL-rK-8Co" firstAttribute="top" secondItem="iMF-OT-vcY" secondAttribute="bottom" constant="40" id="Soa-If-1vb"/>
                             <constraint firstItem="iMF-OT-vcY" firstAttribute="centerX" secondItem="RUk-Uy-mv2" secondAttribute="centerX" id="fRg-68-5Em"/>
                             <constraint firstItem="lEL-Mz-cQN" firstAttribute="top" secondItem="HZL-rK-8Co" secondAttribute="bottom" constant="221" id="i4c-QW-9sy"/>
                             <constraint firstItem="iMF-OT-vcY" firstAttribute="trailing" secondItem="HZL-rK-8Co" secondAttribute="trailing" id="kjZ-T5-nXI"/>
                             <constraint firstItem="HZL-rK-8Co" firstAttribute="height" secondItem="iMF-OT-vcY" secondAttribute="height" id="pi6-CJ-Rcm"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="i4c-QW-9sy"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="PEw-Xn-jmh">
                         <barButtonItem key="rightBarButtonItem" enabled="NO" title="TouchID" id="OME-c5-fqG">
@@ -102,20 +118,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Identification key" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y7z-48-ln9" customClass="JVFloatLabeledTextField">
-                                <rect key="frame" x="221" y="227" width="158" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="158" id="30B-b9-N4D"/>
-                                    <constraint firstAttribute="height" constant="30" id="8bm-Vq-11a"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7o0-y5-V5v" customClass="MyButton">
-                                <rect key="frame" x="265" y="290" width="70" height="30"/>
+                                <rect key="frame" x="150" y="300" width="300" height="50"/>
                                 <color key="backgroundColor" red="0.30890748620000003" green="0.54122595480000002" blue="0.72022251309999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="4MJ-je-wHl"/>
+                                    <constraint firstAttribute="width" constant="300" id="4MJ-je-wHl"/>
+                                    <constraint firstAttribute="height" constant="50" id="el6-1y-bVU"/>
                                 </constraints>
                                 <state key="normal" title="SUBMIT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -124,6 +132,24 @@
                                     <action selector="submitButtonClicked:" destination="G6C-zj-1oO" eventType="touchUpInside" id="Dhn-F6-t9m"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Identification key" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y7z-48-ln9" customClass="JVFloatLabeledTextField">
+                                <rect key="frame" x="150" y="217" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="30B-b9-N4D"/>
+                                    <constraint firstAttribute="height" constant="50" id="8bm-Vq-11a"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.30890748620000003" green="0.54122595480000002" blue="0.72022251309999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -133,6 +159,11 @@
                             <constraint firstItem="7o0-y5-V5v" firstAttribute="top" secondItem="y7z-48-ln9" secondAttribute="bottom" constant="33" id="tcc-xJ-W5C"/>
                             <constraint firstItem="y7z-48-ln9" firstAttribute="centerX" secondItem="CNc-Hl-pz7" secondAttribute="centerX" id="wT2-NG-ooi"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EOq-Ho-iOA"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="identifierTextbox" destination="y7z-48-ln9" id="Ac7-oy-KAH"/>
@@ -155,8 +186,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cute-puppy-3r.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="q8f-H9-fSo">
-                                <rect key="frame" x="45" y="69" width="510" height="353"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cute-puppy-3r.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="q8f-H9-fSo">
+                                <rect key="frame" x="50" y="127" width="500" height="347"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.30890748620000003" green="0.54122595480000002" blue="0.72022251309999996" alpha="1" colorSpace="calibratedRGB"/>
@@ -182,24 +213,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter PIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mJp-IB-DEz" customClass="JVFloatLabeledTextField">
-                                <rect key="frame" x="240" y="250" width="120" height="42"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter PIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mJp-IB-DEz" customClass="JVFloatLabeledTextField">
+                                <rect key="frame" x="150" y="246" width="300" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="gkV-z1-h2o"/>
+                                    <constraint firstAttribute="height" constant="50" id="NJ7-bt-A0u"/>
+                                    <constraint firstAttribute="width" constant="300" id="gkV-z1-h2o"/>
                                 </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATe-ga-s8c" customClass="MyButton">
-                                <rect key="frame" x="244" y="310" width="113" height="30"/>
+                                <rect key="frame" x="150" y="314" width="300" height="50"/>
                                 <color key="backgroundColor" red="0.30890748620000003" green="0.54122595480000002" blue="0.72022251309999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="113" id="hmg-5H-v2T"/>
+                                    <constraint firstAttribute="height" constant="50" id="bqr-bn-rox"/>
+                                    <constraint firstAttribute="width" constant="300" id="hmg-5H-v2T"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="tJk-qV-gOZ"/>
                                 </constraints>
                                 <state key="normal" title="SUBMIT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="tJk-qV-gOZ"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="submitButtonClicked:" destination="cxR-90-yyB" eventType="touchUpInside" id="a2h-tw-dCD"/>
                                 </connections>
@@ -234,27 +281,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter PIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nwX-Zm-NeZ" customClass="JVFloatLabeledTextField">
-                                <rect key="frame" x="241" y="147" width="120" height="42"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter PIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nwX-Zm-NeZ" customClass="JVFloatLabeledTextField">
+                                <rect key="frame" x="151" y="143" width="300" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="loT-ae-OFy"/>
+                                    <constraint firstAttribute="height" constant="50" id="kFl-EK-hwu"/>
+                                    <constraint firstAttribute="width" constant="300" id="loT-ae-OFy"/>
                                 </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat PIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SGJ-DK-iY3" customClass="JVFloatLabeledTextField">
-                                <rect key="frame" x="240" y="218" width="120" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="NHh-I0-uw9"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1j3-zU-rQw" customClass="MyButton">
-                                <rect key="frame" x="265" y="292" width="70" height="30"/>
+                                <rect key="frame" x="150" y="282" width="300" height="50"/>
                                 <color key="backgroundColor" red="0.30890748620000003" green="0.54122595480000002" blue="0.72022251309999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="70" id="LcE-rY-Are"/>
+                                    <constraint firstAttribute="width" constant="300" id="LcE-rY-Are"/>
+                                    <constraint firstAttribute="height" constant="50" id="wQY-TB-WZE"/>
                                 </constraints>
                                 <state key="normal" title="SUBMIT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -263,6 +313,24 @@
                                     <action selector="submitPINClicked:" destination="msC-Pq-TKW" eventType="touchUpInside" id="VVj-iR-Mgt"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Repeat PIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SGJ-DK-iY3" customClass="JVFloatLabeledTextField">
+                                <rect key="frame" x="150" y="214" width="300" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="KWc-fn-ju2"/>
+                                    <constraint firstAttribute="width" constant="300" id="NHh-I0-uw9"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.30890748620000003" green="0.54122595480000002" blue="0.72022251309999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
