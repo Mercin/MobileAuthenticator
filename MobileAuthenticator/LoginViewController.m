@@ -25,6 +25,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
+    self.title = @"Menu";
+
+    self.navigationController.navigationBar.translucent = NO;
     
     static NSString *serviceName = @"diplomski.DiplomskiTouchID";
 
@@ -53,22 +57,25 @@
     else{
         useTouchID = [[[NSString alloc] initWithData:tIDUsage encoding:NSUTF8StringEncoding] boolValue];
     }
+}
 
-    if(identificationDone == YES){
+- (void)viewWillAppear:(BOOL)animated
+{
+    if (identificationDone == YES) {
         [self.identifyButton setEnabled:NO];
+        self.identifyButton.alpha = 0.5;
         [self.loginButton setEnabled:YES];
+        self.loginButton.alpha = 1.0;
+
         [self.enableTouchIDButton setEnabled:YES];
-    }
-    else{
+    } else {
         [self.identifyButton setEnabled:YES];
+        self.identifyButton.alpha = 1.0;
         [self.loginButton setEnabled:NO];
+        self.loginButton.alpha = 0.5;
+
         [self.enableTouchIDButton setEnabled:NO];
     }
-    
-    
-
-    
-
 }
 
 - (void)didReceiveMemoryWarning {
@@ -110,7 +117,8 @@
     
 }
 
-- (IBAction)loginButtonClicked:(id)sender {
+- (IBAction)loginButtonClicked:(id)sender
+{
     if(isBlocked == YES){
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error"
                                                         message:@"Your account is blocked"
