@@ -48,6 +48,9 @@
     }
     else{
         identificationDone = [[[NSString alloc] initWithData:idDone encoding:NSUTF8StringEncoding] boolValue];
+        [self.loginButton setEnabled:YES];
+        [self.identifyButton setEnabled:NO];
+        [self.enableTouchIDButton setEnabled:YES];
     }
     
     if(tIDUsage == nil){
@@ -57,23 +60,30 @@
     else{
         useTouchID = [[[NSString alloc] initWithData:tIDUsage encoding:NSUTF8StringEncoding] boolValue];
     }
+    
+    
+
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    NSData *idDone = [self.myValet objectForKey:@"IdentificationDone"];
+    identificationDone = [[[NSString alloc] initWithData:idDone encoding:NSUTF8StringEncoding] boolValue];
+
+    
     if (identificationDone == YES) {
         [self.identifyButton setEnabled:NO];
         self.identifyButton.alpha = 0.5;
         [self.loginButton setEnabled:YES];
         self.loginButton.alpha = 1.0;
-
+        
         [self.enableTouchIDButton setEnabled:YES];
     } else {
         [self.identifyButton setEnabled:YES];
         self.identifyButton.alpha = 1.0;
         [self.loginButton setEnabled:NO];
         self.loginButton.alpha = 0.5;
-
+        
         [self.enableTouchIDButton setEnabled:NO];
     }
 }

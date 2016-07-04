@@ -61,12 +61,16 @@
                                    {
                                        useTouchID = YES;
                                        [self.myValet setObject:[@"YES" dataUsingEncoding:NSUTF8StringEncoding] forKey:@"TouchID"];
+                                       [self.myValet setObject:[@"YES" dataUsingEncoding:NSUTF8StringEncoding] forKey:@"IdentificationDone"];
+
                                        [self.navigationController popToRootViewControllerAnimated:YES];
 
                                    }];
     UIAlertAction *noAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"NO", @"No action") style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
             useTouchID = NO;
             [self.myValet setObject:[@"NO" dataUsingEncoding:NSUTF8StringEncoding] forKey:@"TouchID"];
+            [self.myValet setObject:[@"YES" dataUsingEncoding:NSUTF8StringEncoding] forKey:@"IdentificationDone"];
+
             [self.navigationController popToRootViewControllerAnimated:YES];
         }];
         [alertController addAction:okAction];
